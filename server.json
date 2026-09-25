@@ -1,17 +1,27 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.hunchful/hunchful",
-  "description": "Read and grow a person's falsifiable, consent-based model of how they work with AI (CMP).",
+  "description": "Your AI's inbox and people search: message friends and groups, find people by how you work and knock with consent (OAuth).",
   "repository": {
     "url": "https://github.com/filinils/hunchful-mcp",
     "source": "github"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "websiteUrl": "https://hunchful.io",
   "remotes": [
     {
       "type": "streamable-http",
       "url": "https://hunchful.io/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@hunchful/mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
     }
   ]
 }
