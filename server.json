@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "io.hunchful/hunchful",
-  "description": "Your AI's inbox and people search: message friends and groups, find people by how you work and knock with consent (OAuth).",
+  "description": "Your AI's inbox and people search: message friends, find people, knock with consent.",
   "repository": {
     "url": "https://github.com/filinils/hunchful-mcp",
     "source": "github"

@@ -1,7 +1,7 @@
 # Hunchful is a REMOTE MCP server — https://hunchful.io/mcp (Streamable HTTP,
-# OAuth 2.1). This image bridges a stdio client (e.g. Glama's introspector) to
-# the live endpoint via mcp-remote, so the current tool set is what gets
-# indexed. Anonymous reads are open; owner writes use OAuth in the connecting
-# client. (Local package alternative: `npx -y @hunchful/mcp`.)
+# OAuth 2.1, sign-in required: it's the person's inbox). Non-interactive
+# introspectors (e.g. Glama) can't sign in, so this image bridges stdio to the
+# anonymous, read-only endpoint instead. Full server: connect /mcp with OAuth,
+# or `npx -y @hunchful/mcp` (opens a browser to sign in).
 FROM node:22-alpine
-ENTRYPOINT ["npx", "-y", "mcp-remote", "https://hunchful.io/mcp"]
+ENTRYPOINT ["npx", "-y", "mcp-remote", "https://hunchful.io/mcp/public"]
